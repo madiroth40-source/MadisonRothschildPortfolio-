@@ -37,7 +37,7 @@
 
   /* hero */
   header{padding:72px 0 56px;border-bottom:1px solid var(--line)}
-  .hero-title{font-size:clamp(4.2rem,14vw,11.5rem);text-align:center}
+  .hero-title{font-size:clamp(3.6rem,12vw,9.5rem);text-align:center}
   .hero-sub{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:var(--taupe-dark)}
   .hero-script{text-align:center;font-size:clamp(1.6rem,3.4vw,2.6rem);margin-top:-14px}
   .hero-photo{margin:42px auto 0;width:min(560px,90%);aspect-ratio:4/3;background:linear-gradient(140deg,#CFC6B8,#A89B8A 55%,#8E8174);border-radius:2px;display:flex;align-items:flex-end;justify-content:center;color:var(--cream);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;padding-bottom:16px}
@@ -113,11 +113,11 @@
 
 <header id="top">
   <div class="wrap">
-    <h1 class="display hero-title">Portfolio</h1>
-    <p class="script hero-script">marketing &amp; brand strategy</p>
+    <h1 class="display hero-title">Madison<br>Rothschild</h1>
+    <p class="script hero-script">marketing portfolio</p>
     <div class="hero-sub">
       <span>Content · Creative</span>
-      <span>Madison Rothschild</span>
+      <span>Brand Strategy</span>
     </div>
     <div class="hero-photo" role="img" aria-label="Portrait of Madison Rothschild — placeholder">Your photo here</div>
     <div class="hero-cta">
@@ -231,7 +231,14 @@
   </div>
 </section>
 
-<footer>© 2026 Madison Rothschild — Marketing Portfolio</footer>
+<footer>
+  <div style="display:flex;justify-content:center;gap:30px;margin-bottom:14px">
+    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    <a href="#" aria-label="Instagram">Instagram</a>
+    <a href="#" aria-label="TikTok">TikTok</a>
+  </div>
+  © 2026 Madison Rothschild — Marketing Portfolio
+</footer>
 
 <script>
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
